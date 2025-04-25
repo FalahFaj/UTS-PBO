@@ -22,7 +22,7 @@ namespace BankPelita
                 Console.WriteLine("Saldo tidak mencukupi untuk penarikan.");
                 Console.WriteLine("Tekan sembarang tombol untuk melanjutkan");
                 Console.ReadKey();
-                //Console.Clear();
+                Console.Clear();
             }
             else
             {
@@ -30,7 +30,7 @@ namespace BankPelita
                 Console.WriteLine($"Penarikan Rp {Jumlah_Penarikan} berhasil. Saldo baru: Rp {Saldo_Rekening}");
                 Console.WriteLine("Tekan sembarang tombol untuk melanjutkan");
                 Console.ReadKey();
-                //Console.Clear();
+                Console.Clear();
             }
         }
 
@@ -40,7 +40,7 @@ namespace BankPelita
             Console.WriteLine($"Setor tunai sebesar {Jumlah_Tunai} telah berhasil. Saldo direkening saat ini Rp {Saldo_Rekening}");
             Console.WriteLine("Tekan sembarang tombol untuk melanjutkan");
             Console.ReadKey();
-            //Console.Clear();
+            Console.Clear();
         }
 
         public override void Transfer_Antar_Rek(double Nominal_Transfer, int No_Rek_Tujuan)
@@ -58,14 +58,14 @@ namespace BankPelita
                     Console.WriteLine($"Transfer Rp {Nominal_Transfer} ke rekening {No_Rek_Tujuan} berhasil. Saldo baru: Rp {Saldo_Rekening}");
                     Console.WriteLine("Tekan sembarang tombol untuk melanjutkan");
                     Console.ReadKey();
-                    //Console.Clear();
+                    Console.Clear();
                 }
                 else
                 {
                     Console.WriteLine("Transfer dibatalkan.");
                     Console.WriteLine("Tekan sembarang tombol untuk melanjutkan");
                     Console.ReadKey();
-                    //Console.Clear();
+                    Console.Clear();
                 }
             }
             else
@@ -73,7 +73,7 @@ namespace BankPelita
                 Console.WriteLine("Saldo tidak mencukupi untuk mentransfer dana");
                 Console.WriteLine("Tekan sembarang tombol untuk melanjutkan");
                 Console.ReadKey();
-                //Console.Clear();
+                Console.Clear();
             }
         }
         public void Tampilkan_Data_Diri()
