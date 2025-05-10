@@ -125,6 +125,12 @@ namespace BankPelita
             bool berjalan = true;
             while (berjalan)
             {
+                Console.WriteLine("Silahkan Masukkan Menu yang mau dipilih : ");
+                Console.WriteLine("1. Penarikan Dana");
+                Console.WriteLine("2. Setor Tunai");
+                Console.WriteLine("3. Transfer Antar Rekening");
+                Console.WriteLine("4. Tampilkan Data Diri");
+                Console.WriteLine("5. Keluar");
                 Console.Write("Pilihan Anda \t: ");
                 int Pilihan = Convert.ToInt32(Console.ReadLine());
                 switch (Pilihan)
@@ -166,17 +172,7 @@ namespace BankPelita
         {
             Tabungan tabungan = new Tabungan();
             Menu.Menu_Data_Diri(tabungan);
-            Menukan();
             Menu.Menu_Perbangkan(tabungan);
-        }
-        static void Menukan()
-        {
-            Console.WriteLine("Silahkan Masukkan Menu yang mau dipilih : ");
-            Console.WriteLine("1. Penarikan Dana");
-            Console.WriteLine("2. Setor Tunai");
-            Console.WriteLine("3. Transfer Antar Rekening");
-            Console.WriteLine("4. Tampilkan Data Diri");
-            Console.WriteLine("5. Keluar");
         }
     }
 }
